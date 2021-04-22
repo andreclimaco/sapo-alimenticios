@@ -11,7 +11,7 @@
 
 ```sh
 $ docker-compose build
-$ docker-compose up
+$ docker-compose up -d
 ```
 
 ### Criar super usuário
@@ -20,10 +20,10 @@ $ docker-compose up
 $ docker-compose run --rm api python manage.py createsuperuser
 ```
 
-### Carga inicial dos dados
+### Executando os testes do backend
 
 ```sh
-$ docker exec -it api-sapo-alimenticios bash -c "cd /app/initial_data && python initial_data_import.py"
+$ docker-compose run --rm api python manage.py test
 ```
 
 ### Executando os testes do frontend
@@ -32,10 +32,10 @@ $ docker exec -it api-sapo-alimenticios bash -c "cd /app/initial_data && python 
 $ docker-compose run --rm app npm run test
 ```
 
-### Executando os testes do backend
+### Carga inicial dos dados
 
 ```sh
-$ docker-compose run --rm api python manage.py test
+$ docker exec -it api-sapo-alimenticios bash -c "cd /app/initial_data && python initial_data_import.py"
 ```
 
 ## Acessando os ambientes
