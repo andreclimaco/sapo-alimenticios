@@ -1,0 +1,119 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+.bg-topo {
+  background-color: #818ca5
+}
+.navbar-topo .navbar-brand {
+  color: rgb(255, 255, 255);
+  font-size: 1.75rem;
+}
+.logo {
+  border-right: 3px solid rgba(255, 255, 255, 0.8);
+  padding-right: 1rem;
+  margin-right: 1rem;
+  margin-left: 2rem;
+  height: 4rem;
+}
+.navbar-topo .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-topo .navbar-toggler {
+  color: rgba(255, 255, 255,.5);
+  border-color: rgba(255, 255, 255,.1);
+}
+.navbar-topo .navbar-nav .nav-link.active {
+  font-weight: 700;
+}
+.navbar-topo .navbar-nav .nav-link {
+  color: rgba(255, 255, 255);
+  font-weight: 400;
+}
+.navbar-nav{
+  font-size: 1.5rem;;
+}
+.main-content{
+  background-color: #e5e7f2;
+  min-height: calc(100vh - 6rem);
+  
+}
+.description-site{
+  text-align: center;
+  color: #49515f;
+  margin: 7rem 10rem 3rem 10rem;
+}
+.description-site h1{
+  font-size: 3rem;
+  font-weight: 700;
+}
+.description-site h1 i{
+  color: #5a6778;
+}
+.header {
+  position: sticky;
+  top:0;
+}
+.table-foods{
+  height: calc(100vh - 30rem);
+  overflow: auto;
+  margin: 0 5rem;
+  width: auto !important;
+  background-color: white;
+}
+.table-foods .table td, .table-foods .table th {
+  padding: 1.75rem .75rem;
+}
+.wrapper{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 575.98px) { 
+  .description-site{
+      margin: 2rem;
+  }
+  .description-site h1{
+      font-size: 1.5rem;
+  }
+  .table-foods{
+      height: calc(100vh - 23rem);
+      margin: 0 2rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .description-site{
+      margin: 2rem 4rem;
+  }
+  .description-site h1{
+      font-size: 1.75rem;
+  }
+  .table-foods{
+      margin: 0 2rem;
+      height: calc(100vh - 20rem);
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .description-site{
+      margin: 2rem 5rem;        
+  }
+  .description-site h1{
+      font-size: 2rem;
+  }
+  .table-foods{
+      margin: 0 2rem;
+      height: calc(100vh - 20rem);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .description-site{
+      margin: 2rem 5rem;     
+  }
+  .description-site h1{
+      font-size: 2.5rem;
+  }
+  .table-foods{
+      margin: 0 2rem;
+      height: calc(100vh - 20rem);
+  }
+} 

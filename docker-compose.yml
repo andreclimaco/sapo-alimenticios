@@ -1,0 +1,45 @@
+version: "3.8"
+
+services:
+    app:
+        container_name: app-sapo-alimenticios
+        build:
+            context: ./frontend
+            dockerfile: Dockerfile
+        volumes:
+            - "./frontend:/app"
+            - "/app/node_modules"
+        ports:
+            - 3000:3000
+        environment:
+            - CHOKIDAR_USEPOLLING=true
+        depends_on:
+            - db
+    api:
+        container_name: api-sapo-alimenticios
+        build:
+            context: ./backend
+        ports:
+            - "9000:9000"
+        volumes:
+            - ./backend:/app
+        command: >
+            sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:9000"
+        environment:
+            - DB_HOST=db-sapo-alimenticios
+            - DB_NAME=sapo_alimenticios
+            - DB_USER=sapo_user
+            - DB_PASS=sapo_passwd
+        depends_on:
+            - db
+    db:
+        container_name: db-sapo-alimenticios
+        image: postgres:13-alpine
+        ports:
+            - "54322:5432"
+        volumes:
+            - ./database/db:/var/lib/postgresql/data
+        environment:
+            - POSTGRES_DB=sapo_alimenticios
+            - POSTGRES_USER=sapo_user
+            - POSTGRES_PASSWORD=sapo_passwd
