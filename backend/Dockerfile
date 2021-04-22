@@ -19,3 +19,6 @@ RUN pip install -r requirements.txt
 RUN apk del .tmp-build-deps
 
 COPY . /app
+
+# run entrypoint.sh
+ENTRYPOINT ["/app/entrypoint.sh"]
