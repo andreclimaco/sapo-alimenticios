@@ -23,7 +23,7 @@ $ docker-compose run --rm api python manage.py createsuperuser
 ### Carga inicial dos dados
 
 ```sh
-$ docker exec -i -t api-sapo-alimenticios bash -c "cd /app/initial_data && python initial_data_import.py"
+$ docker exec -it api-sapo-alimenticios bash -c "cd /app/initial_data && python initial_data_import.py"
 ```
 
 ### Executando os testes do frontend
