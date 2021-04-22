@@ -38,9 +38,9 @@ $ docker-compose run --rm app npm run test
 $ docker-compose run --rm api python manage.py test
 ```
 
-### Acessando o ambiente
+## Acessando o ambiente
 
-#### API
+### API
 
 **ENDPOINTS**
 
@@ -51,6 +51,6 @@ $ docker-compose run --rm api python manage.py test
 
 -   http://localhost:9000/admin/
 
-#### APP
+### APP
 
 -   http://localhost:3000
