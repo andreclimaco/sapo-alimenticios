@@ -38,7 +38,7 @@ $ docker-compose run --rm app npm run test
 $ docker-compose run --rm api python manage.py test
 ```
 
-## Acessando o ambiente
+## Acessando os ambientes
 
 ### API
 
