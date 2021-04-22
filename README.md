@@ -14,7 +14,7 @@ $ docker-compose build
 $ docker-compose up
 ```
 
-### Crirar super usuário
+### Criar super usuário
 
 ```sh
 $ docker-compose run --rm api python manage.py createsuperuser
