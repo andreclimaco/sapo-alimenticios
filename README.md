@@ -1,4 +1,4 @@
-#Sapo Alimentícios
+# Sapo Alimentícios
 
 ## Ambiente com Docker Compose
 
