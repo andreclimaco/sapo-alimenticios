@@ -4,8 +4,8 @@
 
 ### Pré-requisitos
 
--   [Docker Compose](http://https://docs.docker.com/compose/install/ "Install Docker Compose"){:target="_blank"}
--   [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git "Git"){:target="_blank"}
+-   [Docker Compose](http://https://docs.docker.com/compose/install/ "Install Docker Compose")
+-   [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git "Git")
 
 ### Executando os ambientes
 
